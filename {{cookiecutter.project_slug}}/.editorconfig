@@ -6,6 +6,7 @@ root = true
 # Unix-style newlines and whitespace cleanup
 [*]
 end_of_line = lf
+insert_final_newline = true
 trim_trailing_whitespace = true
 insert_final_newline = true
 
@@ -14,7 +15,7 @@ insert_final_newline = true
 trim_trailing_whitespace = false
 
 # general formatting
-[*.{bash,go,sh,zsh,justfile,Earthfile,Makefile}]
+[*.{bash,go,sh,zsh,justfile,Makefile}]
 indent_style = tab
 indent_size = 4
 
@@ -27,7 +28,12 @@ charset = utf-8
 indent_style = space
 indent_size = 4
 
+# rust
+[*.rs]
+indent_style = space
+indent_size = 4
+
 # webdev et al
-[*.{html,xml,js,ts,mjs,css,json,jsonc,gql,lua,tf,tfvars,yml,yaml}]
+[*.{html,xml,js,css,json,jsonc,gql,lua,tf,tfvars,yml,yaml,Vagrantfile}]
 indent_style = space
 indent_size = 2
