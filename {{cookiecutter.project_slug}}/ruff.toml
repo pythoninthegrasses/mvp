@@ -37,8 +37,8 @@ exclude = [
     "venv",
 ]
 
-# Assume Python 3.13
-target-version = "py313"
+# Assume Python 3.11
+target-version = "py311"
 
 [format]
 # Use spaces instead of tabs
@@ -64,6 +64,12 @@ select = [
     "SIM",
     # isort
     "I",
+    # deprecated-import (typing.List -> list, etc.)
+    "UP035",
+    # ternary operator instead of if-else block
+    "SIM108",
+    # raise from within except clause
+    "B904",
 ]
 ignore = ["D203", "E203", "E251", "E266", "E401", "E402", "E501", "F401", "F403", "F841"]
 
