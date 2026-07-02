@@ -1,12 +1,12 @@
 {
+  "devbox.autoShellOnTerminal": false,
   "[python]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit",
-      "source.fixAll": "explicit"
-    }
+    "editor.defaultFormatter": "charliermarsh.ruff"
   },
+  "python.defaultInterpreterPath": "${workspaceFolder}/app/.venv/bin/python",
+  "python.terminal.activateEnvInCurrentTerminal": true,
   "python.testing.pytestArgs": [
     "tests"
   ],
@@ -16,16 +16,6 @@
   "python.analysis.ignore": [
     "*"
   ],
-  "[markdown]": {
-    "editor.formatOnSave": true,
-    "editor.quickSuggestions": {
-      "comments": "off",
-      "strings": "off",
-      "other": "off"
-    },
-    "files.trimTrailingWhitespace": false,
-    "editor.defaultFormatter": "vscode.markdown-language-features"
-  },
-  "doppler.autocomplete.enable": true,
-  "doppler.hover.enable": true
+  "debug.inlineValues": "off",
+  "ruff.organizeImports": true
 }
